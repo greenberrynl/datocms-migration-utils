@@ -1,0 +1,36 @@
+'use strict';
+const { createBoolean } = require('./src/createBoolean');
+const { createCTA } = require('./src/createCTA');
+const { createEnum } = require('./src/createEnum');
+const { createImage } = require('./src/createImage');
+const { createLink } = require('./src/createLink');
+const { createLinks } = require('./src/createLinks');
+const { createModularContent } = require('./src/createModularContent');
+const { createNumber } = require('./src/createNumber');
+const { createSEO } = require('./src/createSEO');
+const { createSingleLine } = require('./src/createSingleLine');
+const { createSlug } = require('./src/createSlug');
+const { createTextArea } = require('./src/createTextArea');
+const { createWysiwyg } = require('./src/createWysiwyg');
+const { getAllModularBlocks } = require('./src/getAllModularBlocks');
+const { updateModularContent } = require('./src/updateModularContent');
+const { uploadFile } = require('./src/uploadFile');
+
+module.exports = {
+  createBoolean,
+  createCTA,
+  createEnum,
+  createImage,
+  createLink,
+  createLinks,
+  createModularContent,
+  createNumber,
+  createSEO,
+  createSingleLine,
+  createSlug,
+  createTextArea,
+  createWysiwyg,
+  getAllModularBlocks,
+  updateModularContent,
+  uploadFile,
+};

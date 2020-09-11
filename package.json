@@ -1,0 +1,52 @@
+{
+  "name": "@greenberrynl/datocms-migration-utils",
+  "version": "1.0.0",
+  "description": "A collection of utils to help with the development of DatoCMS migration files",
+  "repository": "git@github.com:greenberrynl/datocms-migration-utils.git",
+  "author": "Ramon Gebben <ramon.gebben@greenberry.nl>",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf ./dist && NODE_ENV=production babel src --out-dir dist",
+    "prepublishOnly": "yarn build && cp -r ./dist/* . && rm -rf ./dist",
+    "postpublish": "git clean -fd",
+    "test": "jest",
+    "lint": "eslint src/**/*.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn lint && yarn test"
+    }
+  },
+  "jest": {
+    "testURL": "http://localhost",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/coverage/**",
+      "!**/node_modules/**",
+      "!.eslintrc",
+      "!.prettierrc.js"
+    ],
+    "modulePathIgnorePatterns": [
+      "./dist/"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "7.10.5",
+    "@babel/core": "7.11.1",
+    "@babel/preset-env": "7.11.0",
+    "@greenberry/eslint-config": "1.1.2",
+    "@greenberry/prettier-config": "1.0.0",
+    "babel-eslint": "10.1.0",
+    "babel-jest": "26.3.0",
+    "babel-loader": "8.1.0",
+    "eslint": "7.6.0",
+    "eslint-plugin-babel": "5.3.1",
+    "eslint-plugin-react": "7.20.5",
+    "eslint-plugin-react-hooks": "4.0.8",
+    "husky": "4.2.5",
+    "jest": "26.3.0",
+    "prettier": "2.0.5"
+  }
+}
