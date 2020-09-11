@@ -1,15 +1,12 @@
 {
-  "name": "@greenberrynl/datocms-migration-utils",
-  "version": "1.0.0",
+  "name": "@greenberry/datocms-migration-utils",
+  "version": "1.0.1",
   "description": "A collection of utils to help with the development of DatoCMS migration files",
   "repository": "git@github.com:greenberrynl/datocms-migration-utils.git",
   "author": "Ramon Gebben <ramon.gebben@greenberry.nl>",
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf ./dist && NODE_ENV=production babel src --out-dir dist",
-    "prepublishOnly": "yarn build && cp -r ./dist/* . && rm -rf ./dist",
-    "postpublish": "git clean -fd",
     "test": "jest",
     "lint": "eslint src/**/*.js"
   },
