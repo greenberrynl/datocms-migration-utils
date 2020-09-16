@@ -1,6 +1,6 @@
 {
   "name": "@greenberry/datocms-migration-utils",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "A collection of utils to help with the development of DatoCMS migration files",
   "repository": "git@github.com:greenberrynl/datocms-migration-utils.git",
   "author": "Ramon Gebben <ramon.gebben@greenberry.nl>",
