@@ -1,11 +1,11 @@
-# `@greenberrynl/datocms-migration-utils`
+# `@greenberry/datocms-migration-utils`
 
 A collection of utils to help with the development of DatoCMS migration files.
 
 ## Installation
 
 ```bash
-yarn add @greenberrynl/datocms-migration-utils -D
+yarn add @greenberry/datocms-migration-utils -D
 ```
 
 ## API
