@@ -6,6 +6,8 @@ describe('main', () => {
     expect(Object.keys(utils)).toEqual([
       'createBoolean',
       'createCTA',
+      'createDate',
+      'createDateTime',
       'createEnum',
       'createImage',
       'createLink',

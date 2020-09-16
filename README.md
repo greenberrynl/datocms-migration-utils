@@ -38,6 +38,28 @@ await createFieldMethod(client, options, modelId);
 | `localized` | Boolean | ❌       |
 | `required`  | Boolean | ❌       |
 
+#### `createDate`
+
+| Key         | Type                                 | Required |
+| :---------- | :----------------------------------- | :------- |
+| `label`     | String                               | ✅       |
+| `apiKey`    | String                               | ✅       |
+| `hint`      | String                               | ❌       |
+| `localized` | Boolean                              | ❌       |
+| `required`  | Boolean                              | ❌       |
+| `dateRange` | `{min: 'ISO-8601', max: 'ISO-8601'}` | ❌       |
+
+#### `createDateTime`
+
+| Key         | Type                                 | Required |
+| :---------- | :----------------------------------- | :------- |
+| `label`     | String                               | ✅       |
+| `apiKey`    | String                               | ✅       |
+| `hint`      | String                               | ❌       |
+| `localized` | Boolean                              | ❌       |
+| `required`  | Boolean                              | ❌       |
+| `dateRange` | `{min: 'ISO-8601', max: 'ISO-8601'}` | ❌       |
+
 #### `createEnum`
 
 | Key            | Type     | Required |
