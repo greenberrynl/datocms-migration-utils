@@ -1,6 +1,8 @@
 'use strict';
 const { createBoolean } = require('./src/createBoolean');
 const { createCTA } = require('./src/createCTA');
+const { createDate } = require('./src/createDate');
+const { createDateTime } = require('./src/createDateTime');
 const { createEnum } = require('./src/createEnum');
 const { createImage } = require('./src/createImage');
 const { createLink } = require('./src/createLink');
@@ -19,6 +21,8 @@ const { uploadFile } = require('./src/uploadFile');
 module.exports = {
   createBoolean,
   createCTA,
+  createDate,
+  createDateTime,
   createEnum,
   createImage,
   createLink,
