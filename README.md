@@ -207,3 +207,31 @@ await createFieldMethod(client, options, modelId);
 | Key | Type | Required |
 | :-- | :--- | :------- |
 |     |      |          |
+
+### Color formatting
+
+DatoCMS only accepts a specific format when filling colors. That is why we added a util to format hex values in a shape acceptable by DatoCMS.
+
+```js
+const color = formatColor('#000000');
+console.log(color);
+// {
+//   red: 0,
+//   blue: 0,
+//   green: 0,
+//   alpha: 255,
+// }
+```
+
+`formatColor` also accepts a second argument to specify the alpha of the color, this works in the same way as CSS opacity.
+
+```js
+const color = formatColor('#000000', 0.8);
+console.log(color);
+// {
+//   red: 0,
+//   blue: 0,
+//   green: 0,
+//   alpha: 204,
+// }
+```

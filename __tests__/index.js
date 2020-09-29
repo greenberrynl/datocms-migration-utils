@@ -20,6 +20,7 @@ describe('main', () => {
       'createSlug',
       'createTextArea',
       'createWysiwyg',
+      'formatColor',
       'getAllModularBlocks',
       'updateModularContent',
       'uploadFile',
