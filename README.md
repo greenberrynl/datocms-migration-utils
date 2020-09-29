@@ -28,6 +28,18 @@ await createFieldMethod(client, options, modelId);
 | `localized` | Boolean | ❌       |
 | `required`  | Boolean | ❌       |
 
+#### `createColor`
+
+| Key            | Type     | Required |
+| :------------- | :------- | :------- |
+| `label`        | String   | ✅       |
+| `apiKey`       | String   | ✅       |
+| `hint`         | String   | ❌       |
+| `localized`    | Boolean  | ❌       |
+| `required`     | Boolean  | ❌       |
+| `presetColors` | `[#000]` | ❌       |
+| `enableAlpha`  | Boolean  | ❌       |
+
 #### `createCTA`
 
 | Key         | Type    | Required |
