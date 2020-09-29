@@ -1,5 +1,6 @@
 'use strict';
 const { createBoolean } = require('./src/createBoolean');
+const { createColor } = require('./src/createColor');
 const { createCTA } = require('./src/createCTA');
 const { createDate } = require('./src/createDate');
 const { createDateTime } = require('./src/createDateTime');
@@ -20,6 +21,7 @@ const { uploadFile } = require('./src/uploadFile');
 
 module.exports = {
   createBoolean,
+  createColor,
   createCTA,
   createDate,
   createDateTime,
