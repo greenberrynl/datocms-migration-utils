@@ -14,6 +14,7 @@ const { createSEO } = require('./src/createSEO');
 const { createSingleLine } = require('./src/createSingleLine');
 const { createSlug } = require('./src/createSlug');
 const { createTextArea } = require('./src/createTextArea');
+const { formatColor } = require('./src/formatColor');
 const { createWysiwyg } = require('./src/createWysiwyg');
 const { getAllModularBlocks } = require('./src/getAllModularBlocks');
 const { updateModularContent } = require('./src/updateModularContent');
@@ -36,6 +37,7 @@ module.exports = {
   createSlug,
   createTextArea,
   createWysiwyg,
+  formatColor,
   getAllModularBlocks,
   updateModularContent,
   uploadFile,

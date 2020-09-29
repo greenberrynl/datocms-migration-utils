@@ -40,5 +40,8 @@
     "husky": "4.2.5",
     "jest": "26.3.0",
     "prettier": "2.0.5"
+  },
+  "dependencies": {
+    "color": "^3.1.2"
   }
 }
