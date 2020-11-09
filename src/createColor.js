@@ -8,6 +8,7 @@ const createColor = async (
     hint = null,
     required = false,
     localized = false,
+    fieldset = null,
     enableAlpha = false,
     presetColors = [],
   },
@@ -26,6 +27,7 @@ const createColor = async (
     fieldType: 'color',
     validators,
     localized,
+    fieldset,
     hint,
     appearance: {
       editor: 'color_picker',

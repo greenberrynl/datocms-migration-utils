@@ -8,6 +8,7 @@ const createNumber = async (
     hint = null,
     required = false,
     localized = false,
+    fieldset = null,
   },
   modelId
 ) => {
@@ -25,6 +26,7 @@ const createNumber = async (
     validators,
     hint,
     localized,
+    fieldset,
     appearance: {
       editor: 'integer',
       addons: [],

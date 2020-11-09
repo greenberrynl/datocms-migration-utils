@@ -8,6 +8,7 @@ const createEnum = async (
     hint = null,
     required = false,
     localized = false,
+    fieldset = null,
     options = [],
     defaultValue = null,
   },
@@ -28,6 +29,7 @@ const createEnum = async (
     fieldType: 'string',
     validators,
     localized,
+    fieldset,
     hint,
     defaultValue,
     appearance: {

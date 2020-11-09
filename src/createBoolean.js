@@ -8,6 +8,7 @@ const createBoolean = async (
     required = false,
     hint = null,
     localized = false,
+    fieldset = null,
   },
   modelId
 ) => {
@@ -24,6 +25,7 @@ const createBoolean = async (
     validators,
     hint,
     localized,
+    fieldset,
     appearance: {
       editor: 'boolean',
       addons: [],

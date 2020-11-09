@@ -7,6 +7,7 @@ const createSlug = async (
     apiKey = 'slug',
     required = false,
     localized = false,
+    fieldset = null,
     hint = null,
     prefix = null,
     titleField,
@@ -30,6 +31,7 @@ const createSlug = async (
     apiKey,
     fieldType: 'slug',
     localized,
+    fieldset,
     validators,
     hint,
     appearance: {

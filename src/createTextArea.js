@@ -8,6 +8,7 @@ const createTextArea = async (
     hint = null,
     required = false,
     localized = false,
+    fieldset = null,
   },
   modelId
 ) => {
@@ -24,6 +25,7 @@ const createTextArea = async (
     fieldType: 'text',
     validators,
     localized,
+    fieldset,
     hint,
     appearance: {
       editor: 'textarea',

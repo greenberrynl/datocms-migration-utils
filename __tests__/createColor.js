@@ -26,6 +26,7 @@ describe('createColor', () => {
       hint: null,
       label: 'Color',
       localized: false,
+      fieldset: null,
       validators: {
         required: {},
       },
@@ -63,6 +64,7 @@ describe('createColor', () => {
       hint: null,
       label: 'Color',
       localized: false,
+      fieldset: null,
       validators: {},
       appearance: {
         editor: 'color_picker',
@@ -99,6 +101,7 @@ describe('createColor', () => {
       hint: null,
       label: 'Color',
       localized: false,
+      fieldset: null,
       validators: {},
       appearance: {
         editor: 'color_picker',
@@ -135,6 +138,7 @@ describe('createColor', () => {
       hint: null,
       label: 'Color',
       localized: false,
+      fieldset: null,
       validators: {},
       appearance: {
         editor: 'color_picker',

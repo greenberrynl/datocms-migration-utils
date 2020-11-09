@@ -49,6 +49,7 @@ describe('createWysiwyg', () => {
       hint: null,
       label: 'Wysiwyg',
       localized: false,
+      fieldset: null,
       validators: {
         required: {},
       },
@@ -85,6 +86,7 @@ describe('createWysiwyg', () => {
       hint: null,
       label: 'Wysiwyg',
       localized: false,
+      fieldset: null,
       validators: {},
       appearance: {
         editor: 'wysiwyg',

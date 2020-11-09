@@ -21,6 +21,7 @@ describe('updateModularContent', () => {
         richTextBlocks: { itemTypes: options.blockIds },
       },
       localized: false,
+      fieldset: null,
       hint: null,
       appearance: {
         editor: 'rich_text',

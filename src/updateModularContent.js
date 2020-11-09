@@ -6,6 +6,7 @@ const updateModularContent = async (
     label = 'Modular Content',
     apiKey = 'modular_content',
     localized = false,
+    fieldset = null,
     hint = null,
     blockIds = [],
   },
@@ -24,6 +25,7 @@ const updateModularContent = async (
     fieldType: 'rich_text',
     validators,
     localized,
+    fieldset,
     hint,
     appearance: {
       editor: 'rich_text',

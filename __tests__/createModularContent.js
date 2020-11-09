@@ -26,6 +26,7 @@ describe('createModularContent', () => {
       hint: null,
       label: 'Modular Content',
       localized: false,
+      fieldset: null,
       validators: {
         richTextBlocks: { itemTypes: options.blockIds },
       },

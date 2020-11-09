@@ -9,6 +9,7 @@ const createSingleLine = async (
     heading = false,
     required = false,
     localized = false,
+    fieldset = null,
   },
   modelId
 ) => {
@@ -26,6 +27,7 @@ const createSingleLine = async (
     validators,
     hint,
     localized,
+    fieldset,
     appearance: {
       editor: 'single_line',
       addons: [],

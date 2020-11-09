@@ -8,6 +8,7 @@ const createDateTime = async (
     hint = null,
     required = false,
     localized = false,
+    fieldset = null,
     dateRange = null,
   },
   modelId
@@ -26,6 +27,7 @@ const createDateTime = async (
     fieldType: 'date_time',
     validators,
     localized,
+    fieldset,
     hint,
     appearance: {
       editor: 'date_time_picker',

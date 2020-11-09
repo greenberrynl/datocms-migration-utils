@@ -29,6 +29,7 @@ describe('createSlug', () => {
       hint: null,
       label: 'Slug',
       localized: false,
+      fieldset: null,
       validators: {
         required: {},
         unique: {},
@@ -68,6 +69,7 @@ describe('createSlug', () => {
       hint: null,
       label: 'Slug',
       localized: false,
+      fieldset: null,
       validators: {
         unique: {},
         slugTitleField: { titleFieldId: options.titleField.id },
@@ -103,6 +105,7 @@ describe('createSlug', () => {
       hint: null,
       label: 'Slug',
       localized: false,
+      fieldset: null,
       validators: {
         unique: {},
       },

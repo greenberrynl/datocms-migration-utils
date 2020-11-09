@@ -26,6 +26,7 @@ describe('createNumber', () => {
       hint: null,
       label: 'Number',
       localized: false,
+      fieldset: null,
       validators: {
         required: {},
       },
@@ -60,6 +61,7 @@ describe('createNumber', () => {
       hint: null,
       label: 'Number',
       localized: false,
+      fieldset: null,
       validators: {},
       appearance: {
         editor: 'integer',

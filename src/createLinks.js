@@ -7,6 +7,7 @@ const createLinks = async (
     apiKey = 'link',
     hint = null,
     localized = false,
+    fieldset = null,
     items = [],
     size = null,
     editor = 'links_select',
@@ -29,6 +30,7 @@ const createLinks = async (
     validators,
     hint,
     localized,
+    fieldset,
     appearance: {
       editor,
       addons: [],
