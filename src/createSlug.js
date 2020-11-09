@@ -11,6 +11,7 @@ const createSlug = async (
     hint = null,
     prefix = null,
     titleField,
+    ...params
   },
   modelId
 ) => {
@@ -39,6 +40,7 @@ const createSlug = async (
       parameters: { url_prefix: prefix },
       addons: [],
     },
+    ...params,
   });
 };
 

@@ -9,6 +9,7 @@ const createNumber = async (
     required = false,
     localized = false,
     fieldset = null,
+    ...params
   },
   modelId
 ) => {
@@ -32,6 +33,7 @@ const createNumber = async (
       addons: [],
       parameters: {},
     },
+    ...params,
   });
 };
 

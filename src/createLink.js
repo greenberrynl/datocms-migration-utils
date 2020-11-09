@@ -11,6 +11,7 @@ const createLink = async (
     fieldset = null,
     unique = false,
     items = [],
+    ...params
   },
   modelId
 ) => {
@@ -37,6 +38,7 @@ const createLink = async (
       addons: [],
       parameters: {},
     },
+    ...params,
   });
 };
 

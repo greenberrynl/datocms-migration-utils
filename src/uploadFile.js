@@ -12,6 +12,7 @@ const uploadFile = async (
       title: 'Default image',
       customData: {},
     },
+    ...params
   }
 ) => {
   if (!client) throw new Error('client cannot be undefined');
@@ -24,6 +25,7 @@ const uploadFile = async (
       nl,
       en,
     },
+    ...params,
   });
 };
 

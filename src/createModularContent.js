@@ -9,6 +9,7 @@ const createModularContent = async (
     fieldset = null,
     hint = null,
     blockIds = [],
+    ...params
   },
   modelId
 ) => {
@@ -34,6 +35,7 @@ const createModularContent = async (
         startCollapsed: false,
       },
     },
+    ...params,
   });
 };
 

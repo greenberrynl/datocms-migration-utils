@@ -52,6 +52,7 @@ describe('createLink', () => {
       label: 'Link',
       apiKey: 'link',
       items: ['2', '3'],
+      position: 1,
     };
 
     const modelId = '1';
@@ -73,6 +74,7 @@ describe('createLink', () => {
         addons: [],
         parameters: {},
       },
+      position: 1,
     });
   });
 

@@ -76,6 +76,44 @@ describe('createLinks', () => {
     });
   });
 
+  it('create field with position 1', async () => {
+    const mockCreate = jest.fn(() => Promise.resolve({ id: '123' }));
+    const client = {
+      fields: {
+        create: mockCreate,
+      },
+    };
+
+    const options = {
+      label: 'Links',
+      apiKey: 'links',
+      items: ['2', '3'],
+      position: 1,
+    };
+
+    const modelId = '1';
+    await createLinks(client, options, modelId);
+
+    expect(mockCreate.mock.calls[0][0]).toEqual(modelId);
+    expect(mockCreate.mock.calls[0][1]).toEqual({
+      apiKey: 'links',
+      fieldType: 'links',
+      label: 'Links',
+      localized: false,
+      hint: null,
+      validators: {
+        itemsItemType: { itemTypes: options.items },
+        size: options.size,
+      },
+      appearance: {
+        editor: 'links_select',
+        addons: [],
+        parameters: {},
+      },
+      position: 1,
+    });
+  });
+
   it('throws an error when no client is passed', async () => {
     const modelId = '1';
     try {

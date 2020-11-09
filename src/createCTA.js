@@ -8,7 +8,7 @@ const createCTA = async (
     apiKey = 'cta_button',
     localized = false,
     fieldset = null,
-    ...options
+    ...params
   },
   modelId
 ) => {
@@ -17,7 +17,7 @@ const createCTA = async (
 
   await createSingleLine(
     client,
-    { label, apiKey, localized, fieldset, ...options },
+    { label, apiKey, localized, fieldset, ...params },
     modelId
   );
   await createSingleLine(
@@ -27,12 +27,11 @@ const createCTA = async (
       apiKey: `${apiKey}_url`,
       localized,
       fieldset,
-      ...options,
+      ...params,
     },
     modelId
   );
 };
-
 module.exports = {
   createCTA,
 };

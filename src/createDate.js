@@ -10,6 +10,7 @@ const createDate = async (
     localized = false,
     fieldset = null,
     dateRange = null,
+    ...params
   },
   modelId
 ) => {
@@ -34,6 +35,7 @@ const createDate = async (
       addons: [],
       parameters: {},
     },
+    ...params,
   });
 };
 

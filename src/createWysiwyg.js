@@ -31,6 +31,7 @@ const createWysiwyg = async (
     required = false,
     localized = false,
     fieldset = null,
+    ...params
   },
   modelId
 ) => {
@@ -56,6 +57,7 @@ const createWysiwyg = async (
         toolbar,
       },
     },
+    ...params,
   });
 };
 
