@@ -26,6 +26,7 @@ describe('createDateTime', () => {
       hint: null,
       label: 'DateTime',
       localized: false,
+      fieldset: null,
       validators: {
         required: {},
       },
@@ -60,6 +61,7 @@ describe('createDateTime', () => {
       hint: null,
       label: 'DateTime',
       localized: false,
+      fieldset: null,
       validators: {},
       appearance: {
         editor: 'date_time_picker',
@@ -96,6 +98,7 @@ describe('createDateTime', () => {
       hint: null,
       label: 'DateTime',
       localized: false,
+      fieldset: null,
       validators: {
         dateTimeRange: {
           max: '2020-09-16T15:04:56.974Z',

@@ -7,6 +7,7 @@ const createImage = async (
     apiKey = 'image',
     required = false,
     localized = false,
+    fieldset = null,
     hint = null,
   },
   modelId
@@ -29,6 +30,7 @@ const createImage = async (
     fieldType: 'file',
     validators,
     localized,
+    fieldset,
     hint,
     appearance: {
       editor: 'file',

@@ -6,6 +6,7 @@ const createModularContent = async (
     label = 'Modular Content',
     apiKey = 'modular_content',
     localized = false,
+    fieldset = null,
     hint = null,
     blockIds = [],
   },
@@ -24,6 +25,7 @@ const createModularContent = async (
     fieldType: 'rich_text',
     validators,
     localized,
+    fieldset,
     hint,
     appearance: {
       editor: 'rich_text',

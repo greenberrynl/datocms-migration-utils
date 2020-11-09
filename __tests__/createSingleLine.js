@@ -26,6 +26,7 @@ describe('createSingleLine', () => {
       hint: null,
       label: 'String',
       localized: false,
+      fieldset: null,
       validators: {
         required: {},
       },
@@ -62,6 +63,7 @@ describe('createSingleLine', () => {
       hint: null,
       label: 'String',
       localized: false,
+      fieldset: null,
       validators: {},
       appearance: {
         editor: 'single_line',

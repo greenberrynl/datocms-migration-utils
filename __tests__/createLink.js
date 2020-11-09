@@ -26,6 +26,7 @@ describe('createLink', () => {
       fieldType: 'link',
       label: 'Link',
       localized: false,
+      fieldset: null,
       hint: null,
       validators: {
         required: {},
@@ -63,6 +64,7 @@ describe('createLink', () => {
       hint: null,
       label: 'Link',
       localized: false,
+      fieldset: null,
       validators: {
         itemItemType: { itemTypes: options.items },
       },
@@ -99,6 +101,7 @@ describe('createLink', () => {
       hint: null,
       label: 'Link',
       localized: false,
+      fieldset: null,
       validators: {
         itemItemType: { itemTypes: options.items },
         unique: {},

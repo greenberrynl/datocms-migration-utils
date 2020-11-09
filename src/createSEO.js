@@ -2,7 +2,13 @@
 
 const createSEO = async (
   client,
-  { label = 'SEO', apiKey = 'seo', localized = false, hint = null },
+  {
+    label = 'SEO',
+    apiKey = 'seo',
+    localized = false,
+    fieldset = null,
+    hint = null,
+  },
   modelId
 ) => {
   if (!client) throw new Error('client cannot be undefined');
@@ -13,6 +19,7 @@ const createSEO = async (
     apiKey,
     fieldType: 'seo',
     localized,
+    fieldset,
     hint,
     validators: {
       requiredSeoFields: {

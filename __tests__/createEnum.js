@@ -28,6 +28,7 @@ describe('createEnum', () => {
       hint: null,
       label: 'Options',
       localized: false,
+      fieldset: null,
       validators: {
         required: {},
         enum: { values: options.options },
@@ -68,6 +69,7 @@ describe('createEnum', () => {
       hint: null,
       label: 'Options',
       localized: false,
+      fieldset: null,
       validators: {
         enum: { values: options.options },
       },

@@ -30,6 +30,7 @@ const createWysiwyg = async (
     ],
     required = false,
     localized = false,
+    fieldset = null,
   },
   modelId
 ) => {
@@ -46,6 +47,7 @@ const createWysiwyg = async (
     fieldType: 'text',
     validators,
     localized,
+    fieldset,
     hint,
     appearance: {
       editor: 'wysiwyg',

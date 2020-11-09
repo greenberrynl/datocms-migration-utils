@@ -26,6 +26,7 @@ describe('createTextArea', () => {
       hint: null,
       label: 'String',
       localized: false,
+      fieldset: null,
       validators: {
         required: {},
       },
@@ -60,6 +61,7 @@ describe('createTextArea', () => {
       hint: null,
       label: 'String',
       localized: false,
+      fieldset: null,
       validators: {},
       appearance: {
         editor: 'textarea',

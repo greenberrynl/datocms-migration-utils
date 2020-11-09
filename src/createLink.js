@@ -8,6 +8,7 @@ const createLink = async (
     hint = null,
     required = false,
     localized = false,
+    fieldset = null,
     unique = false,
     items = [],
   },
@@ -30,6 +31,7 @@ const createLink = async (
     validators,
     hint,
     localized,
+    fieldset,
     appearance: {
       editor: 'link_select',
       addons: [],

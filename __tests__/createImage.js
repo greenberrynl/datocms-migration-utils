@@ -25,6 +25,7 @@ describe('createImage', () => {
       fieldType: 'file',
       label: 'Image',
       localized: false,
+      fieldset: null,
       hint: null,
       validators: {
         required: {},
@@ -65,6 +66,7 @@ describe('createImage', () => {
       hint: null,
       label: 'Image',
       localized: false,
+      fieldset: null,
       validators: {
         extension: { predefined_list: 'image' },
         requiredAltTitle: {

@@ -25,6 +25,7 @@ describe('createSEO', () => {
       hint: null,
       label: 'Number',
       localized: false,
+      fieldset: null,
       validators: {
         requiredSeoFields: {
           description: false,

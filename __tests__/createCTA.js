@@ -26,6 +26,7 @@ describe('createCTA', () => {
       hint: null,
       label: 'Button',
       localized: false,
+      fieldset: null,
       validators: {
         required: {},
       },
@@ -45,6 +46,7 @@ describe('createCTA', () => {
       hint: null,
       label: 'Button URL',
       localized: false,
+      fieldset: null,
       validators: {
         required: {},
       },
@@ -81,6 +83,7 @@ describe('createCTA', () => {
       hint: null,
       label: 'Button',
       localized: false,
+      fieldset: null,
       validators: {},
       appearance: {
         editor: 'single_line',

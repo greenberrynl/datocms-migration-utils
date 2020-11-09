@@ -26,6 +26,7 @@ describe('createBoolean', () => {
       hint: null,
       label: 'Dark mode',
       localized: false,
+      fieldset: null,
       validators: {
         required: {},
       },
@@ -60,6 +61,7 @@ describe('createBoolean', () => {
       hint: null,
       label: 'Dark mode',
       localized: false,
+      fieldset: null,
       validators: {},
       appearance: {
         editor: 'boolean',
