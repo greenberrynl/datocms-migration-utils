@@ -10,6 +10,7 @@ const createSingleLine = async (
     required = false,
     localized = false,
     fieldset = null,
+    ...params
   },
   modelId
 ) => {
@@ -35,6 +36,7 @@ const createSingleLine = async (
         heading,
       },
     },
+    ...params,
   });
 };
 

@@ -11,6 +11,7 @@ const createLinks = async (
     items = [],
     size = null,
     editor = 'links_select',
+    ...params
   },
   modelId
 ) => {
@@ -36,6 +37,7 @@ const createLinks = async (
       addons: [],
       parameters: {},
     },
+    ...params,
   });
 };
 

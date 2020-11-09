@@ -8,6 +8,7 @@ const createSEO = async (
     localized = false,
     fieldset = null,
     hint = null,
+    ...params
   },
   modelId
 ) => {
@@ -34,6 +35,7 @@ const createSEO = async (
       parameters: {},
       addons: [],
     },
+    ...params,
   });
 };
 

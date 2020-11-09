@@ -11,6 +11,7 @@ const createEnum = async (
     fieldset = null,
     options = [],
     defaultValue = null,
+    ...params
   },
   modelId
 ) => {
@@ -39,6 +40,7 @@ const createEnum = async (
         heading: false,
       },
     },
+    ...params,
   });
 };
 

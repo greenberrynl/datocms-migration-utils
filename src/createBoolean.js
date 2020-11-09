@@ -9,6 +9,7 @@ const createBoolean = async (
     hint = null,
     localized = false,
     fieldset = null,
+    ...params
   },
   modelId
 ) => {
@@ -31,6 +32,7 @@ const createBoolean = async (
       addons: [],
       parameters: {},
     },
+    ...params,
   });
 };
 

@@ -9,6 +9,7 @@ const createImage = async (
     localized = false,
     fieldset = null,
     hint = null,
+    ...params
   },
   modelId
 ) => {
@@ -37,6 +38,7 @@ const createImage = async (
       parameters: {},
       addons: [],
     },
+    ...params,
   });
 };
 

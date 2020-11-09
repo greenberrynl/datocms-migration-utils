@@ -11,6 +11,7 @@ const createColor = async (
     fieldset = null,
     enableAlpha = false,
     presetColors = [],
+    ...params
   },
   modelId
 ) => {
@@ -37,6 +38,7 @@ const createColor = async (
         presetColors,
       },
     },
+    ...params,
   });
 };
 

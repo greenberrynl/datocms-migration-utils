@@ -9,6 +9,7 @@ const createTextArea = async (
     required = false,
     localized = false,
     fieldset = null,
+    ...params
   },
   modelId
 ) => {
@@ -32,6 +33,7 @@ const createTextArea = async (
       addons: [],
       parameters: {},
     },
+    ...params,
   });
 };
 
