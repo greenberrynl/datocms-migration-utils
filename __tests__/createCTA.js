@@ -48,6 +48,7 @@ describe('createCTA', () => {
       localized: false,
       fieldset: null,
       validators: {
+        format: { predefined_pattern: 'url' },
         required: {},
       },
       appearance: {
@@ -58,6 +59,48 @@ describe('createCTA', () => {
         },
       },
     });
+  });
+
+  it('Create validated URL field', async () => {
+    const mockCreate = jest.fn(() => Promise.resolve({ id: '123' }));
+    const client = {
+      fields: {
+        create: mockCreate,
+      },
+    };
+
+    const options = {
+      label: 'Button',
+      apiKey: 'button',
+    };
+
+    const modelId = '1';
+    await createCTA(client, options, modelId);
+
+    const returnValue = {
+      apiKey: 'button_url',
+      fieldType: 'string',
+      hint: null,
+      label: 'Button URL',
+      localized: false,
+      fieldset: null,
+      validators: {
+        format: { predefined_pattern: 'url' },
+      },
+      appearance: {
+        editor: 'single_line',
+        addons: [],
+        parameters: {
+          heading: false,
+        },
+      },
+    };
+
+    expect(mockCreate.mock.calls[0][0]).toEqual(modelId);
+    expect(mockCreate.mock.calls[0][1]).not.toEqual(returnValue);
+
+    expect(mockCreate.mock.calls[1][0]).toEqual(modelId);
+    expect(mockCreate.mock.calls[1][1]).toEqual(returnValue);
   });
 
   it('create optional field', async () => {
