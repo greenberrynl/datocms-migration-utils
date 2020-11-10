@@ -75,6 +75,51 @@ describe('createSingleLine', () => {
     });
   });
 
+  it('create validation fields', async () => {
+    const mockCreate = jest.fn(() => Promise.resolve({ id: '123' }));
+    const client = {
+      fields: {
+        create: mockCreate,
+      },
+    };
+
+    const options = {
+      label: 'String',
+      apiKey: 'string',
+      validators: {
+        format: { predefined_pattern: 'url' },
+      },
+    };
+
+    const noValidationOoptions = {
+      label: 'String',
+      apiKey: 'string',
+    };
+
+    const modelId = '1';
+    await createSingleLine(client, options, modelId);
+
+    expect(mockCreate.mock.calls[0][0]).toEqual(modelId);
+    expect(mockCreate.mock.calls[0][1]).toEqual({
+      apiKey: 'string',
+      fieldType: 'string',
+      hint: null,
+      label: 'String',
+      localized: false,
+      fieldset: null,
+      validators: {
+        format: { predefined_pattern: 'url' },
+      },
+      appearance: {
+        editor: 'single_line',
+        addons: [],
+        parameters: {
+          heading: false,
+        },
+      },
+    });
+  });
+
   it('throws an error when no client is passed', async () => {
     const modelId = '1';
     try {

@@ -17,18 +17,26 @@ const createSingleLine = async (
   if (!client) throw new Error('client cannot be undefined');
   if (!modelId) throw new Error('Model ID cannot be undefined');
 
-  const validators = {};
+  let validators = {};
 
-  if (required) validators.required = {};
+  if (required || params.required) {
+    validators.required = {};
+    params.required = undefined;
+    required = undefined;
+  }
+  if (params.validators) {
+    validators = { ...params.validators, ...validators };
+    delete params.validators;
+  }
 
   return client.fields.create(modelId, {
     label,
     apiKey,
     fieldType: 'string',
-    validators,
     hint,
     localized,
     fieldset,
+    validators: validators,
     appearance: {
       editor: 'single_line',
       addons: [],

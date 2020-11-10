@@ -20,6 +20,7 @@ const createCTA = async (
     { label, apiKey, localized, fieldset, ...params },
     modelId
   );
+
   await createSingleLine(
     client,
     {
@@ -27,6 +28,9 @@ const createCTA = async (
       apiKey: `${apiKey}_url`,
       localized,
       fieldset,
+      validators: {
+        format: { predefined_pattern: 'url' },
+      },
       ...params,
     },
     modelId
